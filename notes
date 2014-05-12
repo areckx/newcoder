@@ -1,0 +1,20 @@
+GOALS::
+
+	Understand how to::
+
+	[] run a python file from the command line
+	[] import a python file
+	[] take a raw file and parse its data with Python's data structures
+	[] make a simple graph
+	[] produce a GeoJSON file for mapping
+
+	What else you will be exposed to::
+	[] Importing python's standard library as well as your own module
+	[] Installing and importing third party packages 
+	[] Licensing and copyright when using third-party packages
+	[] File Input/Output
+	[] counter data structure from the `collections` module
+	[] Global variables, docstrings, list comprehensions
+	[] Python's interactive shell in the terminal
+	[] iterators vs generators
+
