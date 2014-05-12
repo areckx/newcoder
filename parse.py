@@ -2,6 +2,18 @@
 #!/usr/bin/python2
 #// File: parse.py
 #// Description: [ parses a csv file and represents its data in a graph ]
+"""
+Data Visualization Project
+
+Parse data from an ugly CSV or Excel file, and render it in
+JSON, save to a database, and visualize in graph form.
+
+Part I: Taking data from a CSV/Excel file, and return it into a format
+that is easier for Python to play with.
+
+Copyright (c) 2013 E. Lynn Root
+Distributed under the zlib png license. See LICENSE for details.
+"""
 #// Current Version: 0.1-0 as of 2014-mm-dd written by Alex Loranger
 #// This comment has ceased to be!
 #//
@@ -21,12 +33,17 @@ def parse(raw_file, delimiter):
     opened_file = open(raw_file)
 
     # Read CSV file
-    ## second `delimiter` refers to parse() argument
+    # second `delimiter` refers to parse() argument
+    # `csv_data` is now an iterator, we can get each element one at a time
     csv_data = csv.reader(opened_file, delimiter = delimiter)
 
-    # Close CSV file
-
     # Build a data structure to return parsed data
+
+    # set up an empty list 
+    parsed_data = []
+
+
+    # Close CSV file
 
     return parsed_data
 
