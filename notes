@@ -18,3 +18,13 @@ GOALS::
 	[] Python's interactive shell in the terminal
 	[] iterators vs generators
 
+Introducing NumPy and matplotlib::
+
+	NumPy (numb-pie)::
+
+	[] tools to work with high-level mathematical functions as well as 
+	multi-dimensional arrays and matrices
+
+	mathplotlib::
+	[] tools to produce 2d figures.
+
