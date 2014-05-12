@@ -1,4 +1,0 @@
-newcoder
-========
-
-newcoder.io tutorials
