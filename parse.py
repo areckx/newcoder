@@ -42,6 +42,24 @@ def parse(raw_file, delimiter):
     # set up an empty list 
     parsed_data = []
 
+    # Let's first address the column headers that came in the CSV file
+    fields = csv_data.next()
+    # We were able to call the `.next()` method on `csv_data` because it is a generator
+    # -- Generator functions allow you to declare a function that behaves like an iterator
+    #    i.e. it can be used in a `for` loop
+
+    # Let's loop over each row
+    # -- With each loop we will add a dictionary that maps a field(column headers) 
+    #    to the value in the CSV cell
+
+    # Iterate over each row in csv_data
+    for row in csv_data:
+        # With each loop append a dictionary using `dict()` to our list (starting empty)
+        # We use python's built-in `zip()` to zip together header -> value to make our 
+        # dictionary of every row
+        # ex: zip('ABCD', 'xy') --> Ax By
+        parsed_data.append(dict(zip(fields, row)))
+
 
     # Close CSV file
 
