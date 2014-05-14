@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#!/usr/bin/python2
+#!/usr/bin/env python2
 #// File: parse.py
 #// Description: [ parses a csv file and represents its data in a graph ]
 """
@@ -19,7 +19,7 @@ Distributed under the zlib png license. See LICENSE for details.
 #//
 import csv
 
-MY_FILE = "data/sample_sfpd_incident_all.csv"
+MY_FILE = "data/sample.csv"
 
 # In defining the function, we know that we want it to give a CSV file, as well as
 # the delimiter in which the CSV file uses to delimit each element/column
@@ -69,6 +69,15 @@ def parse(raw_file, delimiter):
 
 # Using the `parse()` function
 
+def main():
+    # Call our `parse()` function and give it the needed parameters
+    new_data = parse(MY_FILE, ",")
+
+    # Let's see what the data looks like!
+    print new_data
+
+if __name__ == "__main__": 
+    main()
 
 
 #EOF
