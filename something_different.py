@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/env python2
 #// File: something_different.py
 #// Description: [ ]
 #// Current Version: 0.1-0 as of 2014-mm-dd written by Alex Loranger

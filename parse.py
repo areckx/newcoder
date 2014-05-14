@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #!/usr/bin/env python2
 #// File: parse.py
 #// Description: [ parses a csv file and represents its data in a graph ]
@@ -76,6 +75,7 @@ def main():
     # Let's see what the data looks like!
     print new_data
 
+# "Boilerplate code" so that this only runs if this file is executed, not used as a module
 if __name__ == "__main__": 
     main()
 
