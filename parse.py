@@ -33,7 +33,7 @@ def parse(raw_file, delimiter):
     opened_file = open(raw_file)
 
     # Read CSV file
-    # second `delimiter` refers to parse() argument
+    # second `delimiter` refers to `parse()` argument
     # `csv_data` is now an iterator, we can get each element one at a time
     csv_data = csv.reader(opened_file, delimiter = delimiter)
 
@@ -62,8 +62,13 @@ def parse(raw_file, delimiter):
 
 
     # Close CSV file
+    opened_file.close()
 
     return parsed_data
+
+
+# Using the `parse()` function
+
 
 
 #EOF
