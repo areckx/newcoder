@@ -61,8 +61,21 @@ def  visualize_days():
 
     # Seperate the x-axis data (days of the week) from the 
     # `counter` variable from te y-axis data (number of incidents for each day)
+    data_list = [
+                counter["Monday"],
+                counter["Tuesday"],
+                counter["Wednesday"],
+                counter["Thursday"],
+                counter["Friday"],
+                counter["Saturday"],
+                counter["Sunday"]
+                ]
+
+    # `plt.xticks()` only accepts tuples for labeling the x-axis
+    day_tuple = tuple(["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"])
 
     # With that y-axis data, assign it to a `matplotlib` plot instance
+    plt.plot(data_list)Monday
 
     # Create the amount of ticks needed for our x-axis, and assign it the labels
 
